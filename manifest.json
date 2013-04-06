@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Auditorium",
+  "description": "This checks for new Comments and Posts in Auditorium",
+  "version": "0.1",
+  "icons": { "16": "16.png",
+             "48": "48.png",
+             "128": "128.png" },
+
+  "permissions": [
+    "http://auditorium.pboehm.org/",
+    "http://localhost:3000/",
+    "alarms"
+  ],
+  "browser_action": {
+    "default_icon": "128.png"
+  },
+  "background": {
+    "scripts": [ "jquery.min.js", "background.js" ],
+    "persistent": false
+  },
+  "options_page": "options.html"
+}
